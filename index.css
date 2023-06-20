@@ -1,0 +1,12 @@
+h1 {
+	color:rgb(35, 45, 241);
+	text-shadow: black;
+	background-color: #ffefaf;
+    font-family: cursive;
+}
+h2 {
+	color: #3f3faf;
+	margin: 5px;
+	font-family: cursive;
+	background: linear-gradient(0.25turn,white, #ffefaf);
+}
