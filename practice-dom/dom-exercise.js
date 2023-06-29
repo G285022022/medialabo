@@ -56,7 +56,7 @@ let li3 = document.querySelector('ul#location');
 for(m of data){
 	let text;
 	text = m.name + " 緯度:" + m.lat + ", 経度:" + m.lng;
-	let p3 = document.createElement("p");
+	let p3 = document.createElement("li");
 	p3.textContent = text;
 	li3.insertAdjacentElement('beforeend', p3);
 }
