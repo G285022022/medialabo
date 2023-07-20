@@ -2,9 +2,9 @@ let searchBtn = document.getElementById('search-btn');
 searchBtn.addEventListener('click', iroiro);
 
 function iroiro() {
-  let cityId = document.getElementById('city-id').value.trim(); // Add trim() to remove any leading/trailing spaces
+  let cityId = document.getElementById('city-id').value.trim(); 
   if (cityId === '') {
-    console.log('都市のIDを入力してください'); // Log an error message if the input is empty
+    console.log('都市のIDを入力してください'); 
     return;
   }
 
@@ -15,3 +15,5 @@ function iroiro() {
     .catch(showError)
     .then(finish);
 }
+
+
