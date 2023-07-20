@@ -6,25 +6,31 @@
 </head>
 <body>
   <label for="city-id">検索キー(世界の天気)</label>
-  <select id="city-id">
-    <option value="360630">Cairo カイロ (エジプト)</option>
-    <option value="524901">Moscow モスクワ (ロシア)</option>
-    <option value="993800">Johannesburg ヨハネスブルク (南アフリカ)</option>
-    <option value="1816670">Beijing 北京 (中華人民共和国)</option>
-    <option value="1850147">Tokyo 東京 (日本)</option>
-    <option value="1880252">Singapore シンガポール</option>
-    <option value="2147714">Sydney シドニー (オーストラリア)</option>
-    <option value="2643743">London ロンドン (イギリス)</option>
-    <option value="2968815">Paris パリ (フランス)</option>
-    <option value="3451189">Rio de Janeiro リオデジャネイロ (ブラジル)</option>
-    <option value="5128581">New York ニューヨーク (アメリカ合衆国)</option>
-    <option value="5368361">Los Angeles ロサンゼルス (アメリカ合衆国)</option>
-  </select>
-  <button id="print">検索</button>
+  <input type="text" id="city-id" placeholder="都市のIDを入力してください">
+  <button id="search-btn">検索</button>
+  <p>下の都市名を選んでください</p>
+    <p>カイロ:360630</p>
+    <p>モスクワ:524901</p>
+    <p>ヨハネスブルグ:993800</p>
+    <p>北京:1816670</p>
+    <p>東京:1850147</p>
+    <p>シンガポール:1880252</p>
+    <p>シドニー:2147714</p>
+    <p>ロンドン:2643743</p>
+    <p>パリ:2968815</p>
+    <p>リオデジャネイロ:3451189</p>
+    <p>ニューヨーク:5128581</p>
+    <p>ロサンゼルス:5368361</p>
+
   <p id="name"></p>
   <p id="temp_max"></p>
   <p id="temp_min"></p>
   <p id="situ"></p>
+  <p id="lat"></p>
+  <p id="lon"></p>
+  <p id="weather"></p>
+  <p id="wind_speed"></p>
+  <p id="wind_deg"></p>
 
   <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
   <script src="weather.js"></script>
