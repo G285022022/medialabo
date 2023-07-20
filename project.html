@@ -1,25 +1,32 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>My test page</title>
-    <script src="weather.js" defer></script>
-  </head>
-  <body>
-    <ul>
-        <li>世界の天気（検索結果1件）</li>
-        <ul>
-            <li>緯度: 116.3972</li>
-            <li>経度: 39.9075</li>
-            <li>天気: 曇りがち</li>
-            <li>最低気温: 9.94</li>
-            <li>最高気温 9.94</li>
-            <li>湿度: 14</li>
-            <li>風速: 2.65</li>
-            <li>風向: 197</li>
-            <li>都市名: 北京市</li>
-        </ul>
-    </ul>
-    <div id="result"></div>
-  </body>
+<head>
+  <meta charset="utf-8">
+  <title>My test page</title>
+</head>
+<body>
+  <label for="city-id">検索キー(世界の天気)</label>
+  <select id="city-id">
+    <option value="360630">Cairo カイロ (エジプト)</option>
+    <option value="524901">Moscow モスクワ (ロシア)</option>
+    <option value="993800">Johannesburg ヨハネスブルク (南アフリカ)</option>
+    <option value="1816670">Beijing 北京 (中華人民共和国)</option>
+    <option value="1850147">Tokyo 東京 (日本)</option>
+    <option value="1880252">Singapore シンガポール</option>
+    <option value="2147714">Sydney シドニー (オーストラリア)</option>
+    <option value="2643743">London ロンドン (イギリス)</option>
+    <option value="2968815">Paris パリ (フランス)</option>
+    <option value="3451189">Rio de Janeiro リオデジャネイロ (ブラジル)</option>
+    <option value="5128581">New York ニューヨーク (アメリカ合衆国)</option>
+    <option value="5368361">Los Angeles ロサンゼルス (アメリカ合衆国)</option>
+  </select>
+  <button id="print">検索</button>
+  <p id="name"></p>
+  <p id="temp_max"></p>
+  <p id="temp_min"></p>
+  <p id="situ"></p>
+
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script src="weather.js"></script>
+</body>
 </html>
